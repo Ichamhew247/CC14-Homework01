@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Kanit', sans-serif;
+        }
+
+        h1 {
+            margin-left: 10px;
+        }
+
+        div.info {
+            border: 1px solid black;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>|
+        <a href="./education.html">Education</a>|
+        <a href="./work.html">Work Experience</a>|
+        <a href="#">Contact Me</a>|
+    </nav>
+    <h1>Contact Me</h1>
+
+
+    <div style="border: 1px solid black; width: 500px; margin-left: 10px ; padding: 10px;">
+        <h4>Enter your info</h4>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <label for="fname">Your name:</label><br>
+            <input style="width: 300px;" type="text" name="fname" placeholder="Please input..."><br>
+            <br>
+            <label for="lname">Your E-mail:</label><br>
+            <input style="width: 300px;" type="text" name="email" placeholder="Please input..."><br>
+            <br>
+            <label for="gnd">Gender:</label><br>
+            <select style="width: 300px;" name="gender" id="gnd">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+
+            </select>
+            <br><br>
+            <label for="message">Message:</label><br>
+            <textarea style="width: 300px;" name="message" cols="50" rows="8"></textarea>
+            <br>
+            <input style="width: 60px;" class="button" type="submit" value="Submit">
+            <input style="width: 60px;" class="button" type="reset" value="Clear">
+        </form>
+    </div>
+
+</body>
+
+</html>
